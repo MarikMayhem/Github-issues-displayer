@@ -1,0 +1,19 @@
+@import "../../assets/colors.scss";
+
+.comment {
+    background-color: $dark-gray;
+    color: $white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+    .comment-body {
+        margin: 0;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .comment-date {
+        margin: 10px 0 0;
+        text-align: right;
+    }
+}

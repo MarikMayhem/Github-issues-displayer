@@ -1,0 +1,20 @@
+@import "../../assets/colors.scss";
+
+.issue {
+    padding: 15px;
+    .assignee {
+        display: flex;
+        justify-content: space-between;
+        .issue-state {
+            margin: 0;
+            color: $light-green;
+            font-weight: 500;
+        }
+    }
+    .title {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

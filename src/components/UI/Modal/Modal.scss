@@ -1,0 +1,45 @@
+@import "../../../assets/mixins.scss";
+@import "../../../assets/colors.scss";
+
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: $white;
+    width: 70%;
+    border: 1px solid $dark-gray;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 15%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    max-height: 70vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+
+    @include Tablet {
+        width: 90vw;
+        left: calc(50% - 45vw);
+    }
+
+    .comment-section {
+        color: black;
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: $white;
+    }
+
+    &::-webkit-scrollbar {
+        width: 12px;
+        background-color: $white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #555;
+    }
+}
